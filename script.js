@@ -28,3 +28,19 @@ function showBtnTop() {
 }
 
 setInterval(carrossel, 1800)
+
+
+const body = document.querySelector('body')
+const imgs = document.querySelectorAll('img')
+
+const modoCor = document.querySelector('#modo-cor')
+
+/* onchange */
+modoCor.addEventListener('change', async () => {
+    if (body.className === 'dark-mode') {
+        body.className = 'light-mode'
+    } else {
+        body.className = 'dark-mode'
+
+    }
+})

@@ -51,6 +51,18 @@ button:hover {
     transition: all .6s ease-in-out;
 }
 
+/* Modos de Cores (escuro/claro */
+.dark-mode {
+    filter: invert();
+}
+
+img {
+    filter: invert(0%);
+}
+
+.light-mode {}
+
+
 /* Header Menu */
 #header {
     width: 100%;
