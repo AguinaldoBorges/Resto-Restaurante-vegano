@@ -1,18 +1,23 @@
 * {
-    max-width: 100vw;
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-    color: #252525;
-
-    transition: all .3s;
-
-    scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 80px;
+    scroll-behavior: smooth;
+    transition: all .3s;
+    color: #252525;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
@@ -20,7 +25,7 @@ header {
 }
 
 section {
-    padding: 0 70px;
+    padding: 40px;
 }
 
 h1 {
@@ -32,23 +37,17 @@ button:hover {
 }
 
 #voltarAoTopo {
-    height: 30px;
-    width: 30px;
-
-    padding: 10px;
-
-    border-radius: 50px;
-
     position: fixed;
     right: 20px;
     bottom: 20px;
+    height: 30px;
+    width: 30px;
+    padding: 10px;
     z-index: 2;
-
-    background-color: #E76F51;
-
+    border-radius: 50px;
     opacity: 0;
-
     transition: all .6s ease-in-out;
+    background-color: #E76F51;
 }
 
 /* Header Menu */
@@ -57,11 +56,10 @@ button:hover {
 }
 
 header nav #menu {
-    height: 150px;
-
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 150px;
 }
 
 header nav #menu img {
@@ -77,14 +75,12 @@ header nav #menu a:hover {
 }
 
 .section__header {
-    width: 100%;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
     margin-top: 60px;
     margin-bottom: 30px;
-
 }
 
 .section__header h1 {
@@ -95,26 +91,17 @@ header nav #menu a:hover {
 
 .section__header h4 {
     width: 100%;
-
     margin: 0;
-
-    color: #E76F51;
-
     text-align: center;
+    color: #E76F51;
 }
-
-
-
 
 /* Home */
 #home {
-    height: calc(100vh -150px);
-
     display: flex;
     align-items: center;
-
+    height: calc(100vh -150px);
     padding-right: 0;
-
     background-color: #ffffff;
 }
 
@@ -128,7 +115,6 @@ header nav #menu a:hover {
 
 #home__titulo h1 {
     font-weight: 100;
-
 }
 
 #home__titulo span {
@@ -199,14 +185,10 @@ header nav #menu a:hover {
 
 #home__carrossel__container img {
     object-fit: cover;
-
     width: 100%;
     height: 80vh;
-
     aspect-ratio: 2/1;
 }
-
-
 
 /* Especialidades */
 #especialidades {
@@ -223,4 +205,52 @@ header nav #menu a:hover {
 
 #especialidades__right {
     width: 50%;
+}
+
+/*----Section  ConsumidorFeliz----*/
+.depoimentos__carrossel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    background: #00000089;
+    background-size: cover;
+}
+
+.depoimentos_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 200px;
+    gap: 20px;
+    padding: 20px;
+    font-size: 1.5rem;
+    list-style: none;
+    color: #ffffff;
+    font-weight: 100;
+    background: #0000006e;
+    border-radius: 20px;
+}
+
+.depoimentos_content h4 {
+    font-size: .75rem;
+}
+
+.depoimentos_content img {
+    width: 48px;
+    height: 48px;
+}
+
+.btn_depoimentos {
+    margin: 18px;
+}
+
+.btn_depoimentos:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
 }

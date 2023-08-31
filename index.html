@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
     <title>Restaurante Vegano</title>
 </head>
 
@@ -172,30 +173,17 @@
             </div>
         </section>
         <section id="depoimentos">
-            <div class="section__header">
+            <hgroup class="section__header">
                 <h4>Depoimentos</h4>
                 <h1>Consumidor Feliz</h1>
-            </div>
-            <div class="depoimentos__carrossel">
-                <div class="depoimento1">
-                    <img src="" alt="icone de citação">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nisi dolor facere at eligendi culpa
-                        quos numquam maxime quaerat ipsum, excepturi incidunt eum quas repellat. Earum repellat modi
-                        ipsum nesciunt?</p>
-                    <h4>Matias Souza</h4>
-                </div>
-                <div class="depoimento2">
-                    <img src="" alt="icone de citação">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nisi dolor facere at eligendi culpa
-                        quos numquam maxime quaerat ipsum, excepturi incidunt eum quas repellat. Earum repellat modi
-                        ipsum nesciunt?</p>
-                    <h4>Letícia Ferreira</h4>
-                </div>
-                <div class="depoimentos__carrossel__botoes">
-                    <input type="button" value="<<">
-                    <input type="button" value=">>">
-                </div>
-            </div>
+            </hgroup>
+            <section class="depoimentos__carrossel">
+                <article class="depoimentos_content"></article>
+                <nav>
+                    <input class="btn_depoimentos" id='anterior' type="radio" name="opcao">
+                    <input class="btn_depoimentos" id='proximo' type="radio" name="opcao">
+                </nav>
+            </section>
         </section>
         <section id="nossa-cozinha">
             <div class="section__header">
@@ -252,42 +240,42 @@
                 <input type="button" value="Enviar">
             </form>
         </section>
-        <footer>
-            <div>
-                <img src="" alt="logo do restaurante">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic deleniti asperiores est temporibus neque
-                    fugiat optio! Ipsam veritatis nisi nulla deleniti unde, impedit molestias placeat expedita laborum
-                    est nesciunt eligendi.</p>
-                <p>2010 - 2023</p>
-                <img src="" alt="icone do instagram">
-                <img src="" alt="icone do whatsapp">
-                <img src="" alt="icone do facebook">
-                <img src="" alt="icone do twiter">
-            </div>
-            <div>
-                <p><strong>Horarios</strong></p>
-                <hr>
-                <p> 9:00 - 21:00</p>
-                <p> 9:00 - 21:00</p>
-                <p> 9:00 - 21:00</p>
-                <p> 9:00 - 21:00</p>
-                <p> 9:00 - 21:00</p>
-                <p> 9:00 - 21:00</p>
-                <p> 9:00 - 21:00</p>
-                <p><strong>Telefone</strong></p>
-                <hr>
-                <p><img src="" alt="icone de telefone"> +55 11 36616336</p>
-            </div>
-            <div>
-                <p><strong>Localização</strong></p>
-                <hr>
-                <p><img src="" alt="icone de localizacao"> Rua dos Bacuris, 157, Peri Alto, São Paulo</p>
-            </div>
-            <p>2023 - Desenvolvido por Aguinaldo Borges</p>
-        </footer>
     </main>
+    <footer>
+        <div>
+            <img src="" alt="logo do restaurante">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic deleniti asperiores est temporibus neque
+                fugiat optio! Ipsam veritatis nisi nulla deleniti unde, impedit molestias placeat expedita laborum
+                est nesciunt eligendi.</p>
+            <p>2010 - 2023</p>
+            <img src="" alt="icone do instagram">
+            <img src="" alt="icone do whatsapp">
+            <img src="" alt="icone do facebook">
+            <img src="" alt="icone do twiter">
+        </div>
+        <div>
+            <p><strong>Horarios</strong></p>
+            <hr>
+            <p> 9:00 - 21:00</p>
+            <p> 9:00 - 21:00</p>
+            <p> 9:00 - 21:00</p>
+            <p> 9:00 - 21:00</p>
+            <p> 9:00 - 21:00</p>
+            <p> 9:00 - 21:00</p>
+            <p> 9:00 - 21:00</p>
+            <p><strong>Telefone</strong></p>
+            <hr>
+            <p><img src="" alt="icone de telefone"> +55 11 36616336</p>
+        </div>
+        <div>
+            <p><strong>Localização</strong></p>
+            <hr>
+            <p><img src="" alt="icone de localizacao"> Rua dos Bacuris, 157, Peri Alto, São Paulo</p>
+        </div>
+        <p>2023 - Desenvolvido por Aguinaldo Borges</p>
+    </footer>
 
-    <script src="./script.js"></script>
+
 </body>
 
 </html>
