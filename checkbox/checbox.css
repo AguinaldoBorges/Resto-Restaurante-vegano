@@ -1,0 +1,38 @@
+#finalizar-pedido{
+  background-color: #E76F51;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  height: 50px;
+  padding: 0 30px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.checkbox > input {
+  display: none;
+}
+
+.checkbox > input + label::before{
+  content: '';
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  display: inline-block;
+  background-color: #ffffff;
+  border: 1px solid black;
+  vertical-align: middle;
+  margin-right: 8px;
+  margin-bottom: 3px;
+}
+
+.teste > .imagem{
+  border: 5px solid #E76F51;
+  border-radius: 100px;
+  transition: all 0s;
+}
+
+
+.item-nome{
+  display: inline;
+}
