@@ -1,33 +1,37 @@
-const imagens = document.getElementById('home__carrossel__container')
-const imagem = document.querySelectorAll('#home__carrossel__container img')
+const showBtnTop = () => {
+    //let scroll = document.documentElement.scroll
+    let scroll = window.pageYOffset
+    let menu = document.querySelector('#voltarAoTopo')
+    if (parseInt(scroll) < 350) {
+        menu.style.opacity = 0
+    } else {
+        menu.style.opacity = 1
+    }
+}
+
+//------Section Home -------
+const carrosselConteiner = document.getElementById('home__carrossel__container')
+const imagens = ['./assets/home/carrossel-1.png', './assets/home/carrossel-2.jpg',
+    './assets/home/carrossel-3.jpg', './assets/home/carrossel-4.jpg',
+    './assets/home/carrossel-5.jpg']
 
 let atual = 0
+let imagemAtual = document.createElement('img');
+imagemAtual.src = imagens[atual];
+imagemAtual.style.borderTopLeftRadius = '150px';
+imagemAtual.style.borderBottomRightRadius = '150px';
+imagemAtual.style.border = '#E76F51 solid 5px'
+carrosselConteiner.appendChild(imagemAtual);
 
-// function carrossel() {
-//     atual++
-//     if (atual > 4) {
-//         atual = 0
-//     }
-//     console.log(8);
-//     imagens.style.transform = `translatex(${-atual * 100}%)`
-// }
+function carrossel() {
+    atual++
+    if (atual > imagens.length - 1) {
+        atual = 0
+    }
+    imagemAtual.src = imagens[atual]
+}
 
-// function showBtnTop() {
-//     //let scroll = document.documentElement.scroll
-//      let scroll = window.pageYOffset
-//      console.log(scroll);
-//     let menu = document.querySelector('#voltarAoTopo')
-//     if (parseInt(scroll) < 350) {
-//          console.log('ESCONDE');
-//         menu.style.opacity = 0
-//     } else {
-//          console.log('EXIBE');
-//         menu.style.opacity = 1
-//     }
-// }
-
-// setInterval(carrossel, 1800)
-
+setInterval(carrossel, 4000)
 
 //-----SECTION CONSUMIDOR FELIZ-------
 

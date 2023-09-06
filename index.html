@@ -10,66 +10,52 @@
 </head>
 
 <body onscroll="showBtnTop()">
-    <header id="header">
-        <nav>
-            <div id="menu">
-                <a href="#especialidades">Especialidades</a>
-                <a href="#nossa-cozinha">Sobre nós</a>
-                <a href="#home"><img src="./assets/header/logo.png" alt="logo do restaurante"></a>
-                <a href="#cardapio">Cardápio</a>
-                <a href="#reserva">Reserva</a>
-            </div>
+    <header>
+        <nav class="menu">
+            <a href="#especialidades">Especialidades</a>
+            <a href="#nossa-cozinha">Sobre nós</a>
+            <img src="./assets/header/logo.png" alt="logo do restaurante">
+            <a href="#cardapio">Cardápio</a>
+            <a href="#reserva">Reserva</a>
         </nav>
         <a href="#header">
-            <img src="./assets/header/arrow-up-1--arrow-up-keyboard.png" alt="flecha para cima" id="voltarAoTopo">
+            <img id="voltarAoTopo" src="./assets/header/arrow-up-1--arrow-up-keyboard.png" alt="voltar ao topo">
         </a>
     </header>
     <main>
-        <section id="home">
-            <div id="home__left">
-                <div id="home__titulo">
-                    <h1>Comida caseira saudável e <span>vegana</span>.</h1>
+        <section class="home">
+            <article class="home__article">
+                <h1>Comida caseira saudável e <span>vegana</span>.</h1>
+                <div class="home__cta">
+                    <button id="home__cta__btn__ver-menu">Ver Cardápio</button>
+                    <button id="home__cta__btn__local">Local</button>
                 </div>
-                <div id="home__cta">
-                    <a href="#"><button id="home__cta__btn__ver-menu">Ver Cardápio</button></a>
-                    <a href="#"><button id="home__cta__btn__local">Local</button></a>
-                </div>
-                <div id="home__icones">
+                <nav class="home__icones">
                     <div>
                         <img src="./assets/home/bx_leaf.png" alt="icone de fresco">
                         <p>Fresco</p>
                     </div>
-                    <div class="home__icones__linha-vertical"></div>
-                    <div>
+                    <div id="home_icone_comBordas">
                         <img src="./assets/home/bx_rocket.png" alt="icone de rapido">
                         <p>Rápido</p>
                     </div>
-                    <div class="home__icones__linha-vertical"></div>
                     <div>
                         <img src="./assets/home/bx_support.png" alt="icone de suporte">
                         <p>Suporte</p>
                     </div>
-                </div>
-            </div>
-            <div id="home__right">
-                <div id="home__carrossel">
-                    <div id="home__carrossel__container">
-                        <img src="./assets/home/carrossel-1.png" alt="comida do restaurante">
-                        <img src="./assets/home/carrossel-2.jpg" alt="comida do restaurante">
-                        <img src="./assets/home/carrossel-3.jpg" alt="comida do restaurante">
-                        <img src="./assets/home/carrossel-4.jpg" alt="comida do restaurante">
-                        <img src="./assets/home/carrossel-5.jpg" alt="comida do restaurante">
-                    </div>
-                </div>
-            </div>
+                </nav>
+            </article>
+            <aside id="home__carrossel">
+                <ul id="home__carrossel__container"></ul>
+            </aside>
         </section>
-        <section id="especialidades">
-            <div class="section__header">
+        <section class="especialidades">
+            <hgroup>
                 <h1>Especialidades</h1>
                 <h4>da casa</h4>
-            </div>
-            <div id="container">
-                <div id="especialidades__left">
+            </hgroup>
+            <article class="especialidades__article">
+                <div class="especialidades__texto">
                     <h4>Sobremesas</h4>
                     <hr>
                     <h2>Yogurte Grego com Granola e Framboesa</h2>
@@ -80,17 +66,11 @@
                         Aspernatur iure fugit voluptatem!</p>
                     <h3>R$ 15,00</h3>
                 </div>
-                <div id="especialidades__right">
-                    <img src="./assets/especialidades/sobremesa.png"
-                        alt="sobremesa yogurte grego com granola e framboesa">
-                </div>
-
-            </div>
-            <div id="container">
-                <div id="especialidades__left">
-                    <img src="./assets/especialidades/sopa.png" alt="sobremesa yogurte com granola e framboesa">
-                </div>
-                <div id="especialidades__right">
+                <img src="./assets/especialidades/sobremesa.png" alt="sobremesa yogurte grego com granola e framboesa">
+            </article>
+            <article class="especialidades__article">
+                <img src="./assets/especialidades/sopa.png" alt="sobremesa yogurte com granola e framboesa">
+                <div class="especialidades__texto">
                     <h4>Almoço</h4>
                     <hr>
                     <h2>Sopa de Legumes</h2>
@@ -101,79 +81,90 @@
                         Aspernatur iure fugit voluptatem!</p>
                     <h3>R$ 25,00</h3>
                 </div>
-            </div>
+            </article>
         </section>
-        <section id="cardapio">
-            <div class="section__header">
+        <section class="cardapio">
+            <hgroup>
                 <h1>Menu</h1>
                 <h4>Veganismo</h4>
-            </div>
-            <div class="menu__cafe-da-manha">
-                <h2>Café da manhã</h2>
-                <div class="menu__prato">
-                    <img src="" alt="café">
-                    <p><strong>Café da manhã</strong> R$ 15,00</p>
-                    <h5>Especial vegano</h5>
-                    <img src="" alt="linha divisoria">
-                </div>
-                <div class="menu__prato">
-                    <img src="" alt="café">
-                    <p><strong>Café da manhã</strong> R$ 15,00</p>
-                    <h5>Especial vegano</h5>
-                    <img src="" alt="linha divisoria">
-                </div>
-                <div class="menu__prato">
-                    <img src="" alt="café">
-                    <p><strong>Café da manhã</strong> R$ 15,00</p>
-                    <h5>Especial vegano</h5>
-                    <img src="" alt="linha divisoria">
-                </div>
-            </div>
-            <div class="menu__almoco">
-                <h2>Almoço</h2>
-                <div class="menu__prato">
-                    <img src="" alt="café">
-                    <p><strong>Café da manhã</strong> R$ 15,00</p>
-                    <h5>Especial vegano</h5>
-                    <img src="" alt="linha divisoria">
-                </div>
-                <div class="menu__prato">
-                    <img src="" alt="café">
-                    <p><strong>Café da manhã</strong> R$ 15,00</p>
-                    <h5>Especial vegano</h5>
-                    <img src="" alt="linha divisoria">
-                </div>
-                <div class="menu__prato">
-                    <img src="" alt="café">
-                    <p><strong>Café da manhã</strong> R$ 15,00</p>
-                    <h5>Especial vegano</h5>
-                    <img src="" alt="linha divisoria">
-                </div>
-            </div>
-            <div class="menu__jantar">
-                <h2>Jantar</h2>
-                <div class="menu__prato">
-                    <img src="" alt="café">
-                    <p><strong>Café da manhã</strong> R$ 15,00</p>
-                    <h5>Especial vegano</h5>
-                    <img src="" alt="linha divisoria">
-                </div>
-                <div class="menu__prato">
-                    <img src="" alt="café">
-                    <p><strong>Café da manhã</strong> R$ 15,00</p>
-                    <h5>Especial vegano</h5>
-                    <img src="" alt="linha divisoria">
-                </div>
-                <div class="menu__prato">
-                    <img src="" alt="café">
-                    <p><strong>Café da manhã</strong> R$ 15,00</p>
-                    <h5>Especial vegano</h5>
-                    <img src="" alt="linha divisoria">
-                </div>
-            </div>
+            </hgroup>
+            <section class="conteiner_cardapio">
+                <section class="menu_cardapio">
+                    <h2>Café da manhã</h2>
+                    <article>
+                        <img src="./assets/menu/cafe-da-manha.png" alt="café">
+                        <div>
+                            <p><strong>Café da manhã</strong> R$ 15,00</p>
+                            <h5>Especial vegano</h5>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/menu/cafe-da-manha.png" alt="café">
+                        <div>
+                            <p><strong>Café da manhã</strong> R$ 15,00</p>
+                            <h5>Especial vegano</h5>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/menu/cafe-da-manha.png" alt="café">
+                        <div>
+                            <p><strong>Café da manhã</strong> R$ 15,00</p>
+                            <h5>Especial vegano</h5>
+                        </div>
+                    </article>
+                </section>
+                <section class="menu_cardapio menu_almoco">
+                    <h2>Almoço</h2>
+                    <article>
+                        <img src="./assets/menu/cafe-da-manha.png" alt="café">
+                        <div>
+                            <p><strong>Café da manhã</strong> R$ 15,00</p>
+                            <h5>Especial vegano</h5>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/menu/cafe-da-manha.png" alt="café">
+                        <div>
+                            <p><strong>Café da manhã</strong> R$ 15,00</p>
+                            <h5>Especial vegano</h5>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/menu/cafe-da-manha.png" alt="café">
+                        <div>
+                            <p><strong>Café da manhã</strong> R$ 15,00</p>
+                            <h5>Especial vegano</h5>
+                        </div>
+                    </article>
+                </section>
+                <section class="menu_cardapio">
+                    <h2>Jantar</h2>
+                    <article>
+                        <img src="./assets/menu/cafe-da-manha.png" alt="café">
+                        <div>
+                            <p><strong>Café da manhã</strong> R$ 15,00</p>
+                            <h5>Especial vegano</h5>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/menu/cafe-da-manha.png" alt="café">
+                        <div>
+                            <p><strong>Café da manhã</strong> R$ 15,00</p>
+                            <h5>Especial vegano</h5>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/menu/cafe-da-manha.png" alt="café">
+                        <div>
+                            <p><strong>Café da manhã</strong> R$ 15,00</p>
+                            <h5>Especial vegano</h5>
+                        </div>
+                    </article>
+                </section>
+            </section>
         </section>
         <section id="depoimentos">
-            <hgroup class="section__header">
+            <hgroup>
                 <h4>Depoimentos</h4>
                 <h1>Consumidor Feliz</h1>
             </hgroup>
@@ -186,10 +177,10 @@
             </section>
         </section>
         <section id="nossa-cozinha">
-            <div class="section__header">
+            <hgroup>
                 <h4>Especialistas</h4>
                 <h1>Nossa Cozinha</h1>
-            </div>
+            </hgroup>
             <div class="nossa-cozinha__card">
                 <img src="" alt="chefe">
                 <div class="card__descricao-do-chefe">
@@ -223,10 +214,10 @@
         </section>
         <section id="reserva">
             <form action="">
-                <div class="section__header">
+                <hgroup>
                     <h4>Esperamos Você</h4>
                     <h1>Reserva</h1>
-                </div>
+                </hgroup>
                 <input type="text" id="nome" name="nome" placeholder="Nome">
                 <input type="text" id="email" name="email" placeholder="Email">
                 <input type="text" id="telefone" name="telefone" placeholder="Telefone">
