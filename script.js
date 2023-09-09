@@ -9,20 +9,20 @@ function carrossel() {
     if (atual > 4) {
         atual = 0
     }
-    console.log(8);
+    // console.log(8);
     imagens.style.transform = `translatex(${-atual * 100}%)`
 }
 
 function showBtnTop() {
     //let scroll = document.documentElement.scroll
     let scroll = window.pageYOffset
-    console.log(scroll);
+    // console.log(scroll);
     let menu = document.querySelector('#voltarAoTopo')
     if (parseInt(scroll) < 350) {
-        console.log('ESCONDE');
+        // console.log('ESCONDE');
         menu.style.opacity = 0
     } else {
-        console.log('EXIBE');
+        // console.log('EXIBE');
         menu.style.opacity = 1
     }
 }
@@ -44,3 +44,5 @@ modoCor.addEventListener('change', async () => {
 
     }
 })
+
+
