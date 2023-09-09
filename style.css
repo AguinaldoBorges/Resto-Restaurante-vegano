@@ -140,7 +140,6 @@ header nav #menu a:hover {
 
 #home__titulo h1 {
     font-weight: 100;
-
 }
 
 #home__titulo span {
@@ -243,139 +242,175 @@ header nav #menu a:hover {
     justify-content: center;
     align-items: center;
 }
+
 .menu__cafe-da-manha {
     float: left;
     margin-right: 70px;
     margin-bottom: 70px;
 }
+
 .menu__cafe-da-manha h2 {
     text-align: center;
 }
+
 #menu__cafe-1 {
     margin-top: 60px;
 }
+
 #menu__cafe-1 img {
     float: left;
     margin-right: 10px;
     margin-bottom: 40px;
 }
+
 #menu__cafe-1 p {
     margin: 3px;
     padding-top: 15px;
 }
+
 #menu__cafe-1 h5 {
     margin: 3px;
 }
+
 #menu__cafe-2 {
     margin-top: 60px;
 }
+
 #menu__cafe-2 img {
     float: left;
     margin-right: 10px;
     margin-bottom: 40px;
 }
+
 #menu__cafe-2 p {
     margin: 5px;
     padding-top: 70px;
 }
+
 #menu__cafe-2 h5 {
     margin: 0px;
 }
+
 #menu__cafe-3 {
     margin-top: 60px;
 }
+
 #menu__cafe-3 img {
     float: left;
     margin-right: 10px;
     margin-bottom: 40px;
 }
+
 #menu__cafe-3 p {
     margin: 3px;
     padding-top: 75px;
 }
+
 #menu__cafe-3 h5 {
     margin: 3px;
 }
+
 #menu__cafe-4 {
     margin-top: 60px;
 }
+
 #menu__cafe-4 img {
     float: left;
     margin-right: 10px;
     margin-bottom: 40px;
 }
+
 #menu__cafe-4 p {
     margin: 3px;
     padding-top: 70px;
 }
+
 #menu__cafe-4 h5 {
     margin: 3px;
 }
+
 .menu__almoco {
     float: left;
     margin-right: 70px;
     margin-bottom: 70px;
 }
+
 .menu__almoco h2 {
     text-align: center;
 }
+
 #menu__almoco-1 {
     margin-top: 60px;
 }
+
 #menu__almoco-1 img {
     float: left;
     margin-right: 10px;
     margin-bottom: 40px;
 }
+
 #menu__almoco-1 p {
     margin: 3px;
     padding-top: 20px;
 }
+
 #menu__almoco-1 h5 {
     margin: 0px;
 }
+
 #menu__almoco-2 {
     margin-top: 60px;
 }
+
 #menu__almoco-2 img {
     float: left;
     margin-right: 10px;
     margin-bottom: 40px;
 }
+
 #menu__almoco-2 p {
     margin: 3px;
     padding-top: 85px;
 }
+
 #menu__almoco-2 h5 {
     margin: 0px;
 }
+
 #menu__almoco-3 {
     margin-top: 60px;
 }
+
 #menu__almoco-3 img {
     float: left;
     margin-right: 10px;
     margin-bottom: 40px;
 }
+
 #menu__almoco-3 p {
     margin: 3px;
     padding-top: 85px;
 }
+
 #menu__almoco-3 h5 {
     margin: 0px;
 }
+
 #menu__almoco-4 {
     margin-top: 60px;
 }
+
 #menu__almoco-4 img {
     float: left;
     margin-right: 10px;
     margin-bottom: 40px;
 }
+
 #menu__almoco-4 p {
     margin: 3px;
     padding-top: 90px;
 }
+
 #menu__almoco-4 h5 {
     margin: 0px;
 }
@@ -384,51 +419,64 @@ header nav #menu a:hover {
     float: left;
     margin-bottom: 70px;
 }
+
 .menu__jantar h2 {
     text-align: center;
 }
+
 #menu__jantar-1 {
     margin-top: 60px;
 }
+
 #menu__jantar-1 img {
     float: left;
     margin-right: 10px;
     margin-bottom: 40px;
 }
+
 #menu__jantar-1 p {
     margin: 3px;
     padding-top: 15px;
 }
+
 #menu__jantar-1 h5 {
     margin: 0px;
 }
+
 #menu__jantar-2 {
     margin-top: 60px;
 }
+
 #menu__jantar-2 img {
     float: left;
     margin-right: 10px;
     margin-bottom: 40px;
 }
+
 #menu__jantar-2 p {
     margin: 3px;
     padding-top: 70px;
 }
+
 #menu__jantar-2 h5 {
     margin: 0px;
 }
+
 #menu__jantar-3 {
     margin-top: 60px;
 }
+
 #menu__jantar-3 img {
     float: left;
     margin-right: 10px;
     margin-bottom: 40px;
 }
+
 #menu__jantar-3 p {
     margin: 3px;
     padding-top: 75px;
 }
+
 #menu__jantar-3 h5 {
     margin: 0px;
 }
@@ -436,15 +484,68 @@ header nav #menu a:hover {
 #menu__jantar-4 {
     margin-top: 60px;
 }
+
 #menu__jantar-4 img {
     float: left;
     margin-right: 10px;
     margin-bottom: 40px;
 }
+
 #menu__jantar-4 p {
     margin: 3px;
     padding-top: 70px;
 }
+
 #menu__jantar-4 h5 {
     margin: 0px;
+}
+
+
+/* Nossa Cozinha */
+.cards_nossa-cozinha {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.nossa-cozinha__card {
+    margin: 20px 30px;
+}
+
+.nossa-cozinha__card img {
+    width: 300px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.card__descricao-do-chefe {
+    background-color: white;
+    border-radius: 5px;
+    padding: 0px 40px 10px 40px;
+    text-align: center;
+    margin: 30px;
+    position: absolute;
+    z-index: 1;
+    margin-top: -150px;
+}
+
+.card__descricao-do-chefe p {
+    margin: 10px 0;
+}
+
+.card__descricao-do-chefe h4 {
+    margin: 15px 0;
+    font-weight: normal;
+}
+
+.card__descricao-do-chefe img {
+    margin: 2px 15px 2px 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.card__descricao-do-chefe img:hover {
+    margin: 0 14px 0 14px;
+    width: 22px;
+    height: 22px;
 }
